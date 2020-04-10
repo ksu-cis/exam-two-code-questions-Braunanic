@@ -7,6 +7,16 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
-        <TextBlock>Customize Cobbler</TextBlock>
+        <StackPanel>
+            <TextBlock FontSize="50" VerticalAlignment="Center" HorizontalAlignment="Center"> Customize Cobbler</TextBlock>
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <Button Name ="BlueberryButton" Margin="40,0,40,0" Height="50" Width="100" FontSize="20" Click="BlueberryButton_Click">Blueberry</Button>
+                <Button Name="PeachButton" Margin="40,40,40,40" Height="50" Width="100"  FontSize="20">Peach</Button>
+                <Button Name="CherryButton" Width="100" Margin="40,0,40,0" Height="50"  FontSize="20">Cherry</Button>
+            </StackPanel>
+            <Viewbox Height="50">
+                <CheckBox IsChecked="{Binding Path=WithIceCream}" >Ice Cream</CheckBox>
+            </Viewbox>
+        </StackPanel>
     </Grid>
 </UserControl>
